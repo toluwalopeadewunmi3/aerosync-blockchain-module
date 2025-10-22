@@ -30,6 +30,7 @@ Returned Hash → Linked to Off-chain Record
 | **maintenance-log.clar** | Maintenance Records | Stores immutable maintenance records linking technician identity, tasks, costs, and timestamps |
 | **audit-trail.clar** | Compliance | Records every platform action (create/update/delete) with principal IDs and timestamps for regulatory audit trails |
 | **payment-mirror.clar** | Finance | Anchors hashes of off-chain financial transactions for transparent reconciliation |
+| **flight-manifest.clar** | Flight Manifests | Links blockchain logs to passenger/cargo manifests with IATA One Record API interoperability |
 
 ## Key Features
 
@@ -62,6 +63,14 @@ Returned Hash → Linked to Off-chain Record
 - Provide blockchain-based financial transparency
 - Support reconciliation through hash references
 
+### ✈️ Flight Manifest Verification
+- Immutable passenger and cargo manifest records
+- IATA One Record API integration for industry interoperability
+- End-to-end flight visibility from planning to completion
+- Cryptographic linking between manifests and cargo records
+- Tamper-proof manifest locking after verification
+- Support for passenger, cargo, and mixed manifest types
+
 ## Technical Stack
 
 - **Blockchain**: Stacks v2
@@ -77,6 +86,8 @@ Returned Hash → Linked to Off-chain Record
 - **Technicians**: Log and verify maintenance tasks
 - **Finance Officers**: Record and reconcile payments
 - **Auditors/Regulators**: Read-only verification access
+- **Flight Operators**: Create and manage flight manifests
+- **Verifiers**: Validate and lock flight manifests
 
 ## Getting Started
 
